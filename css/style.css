@@ -1,0 +1,161 @@
+/* *C0MM0N CSS STARTS HERE */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primaryfont:'Ubuntu', sans-serif; 
+    --secondaryfont:'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor:#0f2f44;
+    --secondarycolor:#ffd447;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+.container{width: 1170px;
+    margin: auto;
+
+}
+.row{display: flex;
+    flex-wrap:wrap ;
+
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color:var(--secondarycolor);
+    color:var(--primarycolor);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* *COMMON CSS ENDS HERE */
+/* *HEADER STARTS HERE */
+header{
+    background-color:var(--primarycolor) ;
+    color:aliceblue;
+    padding: 19px 0;
+}
+
+
+
+header .opening,
+header .welcome{
+    width:50% ;
+
+}
+header .opening{
+    text-align: right;
+}
+
+/* *HEADER ENDS HERE */
+/* *NAV STARTS HERE */
+nav .logo{
+      width: 30%;
+}
+nav .menu{
+       width: 70%;
+       text-align: right;
+       
+}
+nav .menu ul li{
+    display: inline-block;
+
+}
+nav .menu ul li a{
+font-family: var(--primaryfont);
+font-weight: 500;
+color: #222222;
+font-size: 16px;
+padding: 39px 20px;
+display: block;
+transition: 0.24s;
+}
+nav .menu ul li:hover a{
+    background-color:#fff9e6 ;
+    color:var(--secondarycolor) ;
+}
+nav .menu ul li span{
+    border: 1px solid #ccc;
+    color: #999;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+/* *NAV ENDS HERE */
+/* *BANNER STARTS HERE */
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.banner_cnt h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+}
+.banner_cnt h1{
+    font-weight: 400;
+    font-size: 80px;
+    font-family: var(--secondaryfont);
+    color: var(--primarycolor);
+    line-height: 71px;
+
+}
+.banner_cnt h4{
+    font-weight:400 ;
+    font-family:var(--primaryfont) ;
+    font-size:32px ;
+    color:#8484bf;
+    letter-spacing: 15px;
+    
+    
+}
+.banner_cnt p{
+    font-size:14px ;
+    font-family:var(--thirdfont) ;
+    font-weight: 400;
+    color:#8d949c ;
+    margin: 33px 0;
+}
+.banner_cnt{
+    width: 40%;
+}
+.banner_cnt .btn{
+    background-color: #8484bf;
+    color: aliceblue;
+}
+.banner_cnt .videobtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--thirdColor);
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.163);
+}
+#banner .container,
+#banner .row{
+    height: 100%;
+}
+/* *BANNER ENDS HERE */
